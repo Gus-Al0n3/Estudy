@@ -1,0 +1,16 @@
+na pila es una estructura de datos en la que los elementos se agregan y eliminan de manera que el último elemento agregado es el primero en ser eliminado (LIFO, last-in first-out). En esta implementación, la pila está representada como una lista simplemente ligada, en la que cada nodo contiene un valor y un puntero al siguiente nodo.
+
+La estructura Nodo se define con dos miembros: valor y siguiente. valor almacena el valor que se desea agregar a la pila, y siguiente es un puntero al siguiente nodo en la pila. La estructura Pila tiene un solo miembro: tope, que es un puntero al nodo superior de la pila.
+
+La función crearPila se encarga de crear una nueva pila vacía. Para hacer esto, primero se asigna memoria para una nueva estructura Pila mediante la función malloc. Se inicializa tope en NULL para indicar que la pila está vacía. Se imprime un mensaje para indicar que se ha creado una nueva pila.
+
+La función pilaVacia verifica si la pila está vacía. Si tope es NULL, devuelve 1 (verdadero), lo que indica que la pila está vacía. De lo contrario, devuelve 0 (falso).
+
+La función push agrega un nuevo valor a la pila. Para hacer esto, primero se asigna memoria para un nuevo nodo mediante malloc. El valor se asigna al miembro valor del nuevo nodo. El puntero siguiente se asigna al nodo actual en el tope de la pila, de modo que el nuevo nodo se convierte en el nuevo tope de la pila. Se imprime un mensaje para indicar que se ha agregado un valor a la pila.
+
+La función pop elimina el valor superior de la pila y lo devuelve. Si la pila está vacía, se imprime un mensaje de error y se devuelve -1. De lo contrario, se guarda una referencia al nodo superior en nodoAEliminar. El valor a eliminar se guarda en valorAEliminar. El puntero tope se actualiza para que apunte al siguiente nodo en la pila, y se libera la memoria asignada al nodo que se está eliminando. Se imprime un mensaje para indicar que se ha eliminado un valor de la pila.
+
+La función imprimirPila imprime todos los valores de la pila. Comenzando desde el nodo superior, se recorre cada nodo de la pila e imprime el valor contenido en cada nodo.
+
+En la función main, se crea una nueva pila mediante crearPila. Se agrega un valor a la pila mediante push. Luego, se agregan dos valores más mediante push. Se imprime el contenido de la pila mediante imprimirPila. Se eliminan dos valores mediante pop, y se imprime el contenido de la pila de nuevo. Finalmente, se eliminan los dos valores restantes mediante pop.
+

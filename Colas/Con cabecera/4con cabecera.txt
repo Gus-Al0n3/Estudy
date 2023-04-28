@@ -1,0 +1,9 @@
+En esta implementación, se utiliza una estructura Cola que contiene un puntero al nodo inicial y al nodo final de la cola, así como un contador que lleva la cuenta de la cantidad de elementos en la cola.
+
+La función crearCola() se utiliza para inicializar una nueva cola, estableciendo los punteros inicio y fin en NULL y el contador en cero.
+
+Las funciones estaVacia(), encolar(), desencolar() y mostrar() se utilizan de manera similar a las implementaciones anteriores.
+
+En el main(), se crea una nueva cola, se encolan los elementos 1, `2
+
+la estructura Cola con los campos [inicio, fin, contador], donde inicio y fin son punteros a los nodos inicial y final de la cola, respectivamente, y contador lleva la cuenta de la cantidad de elementos en la cola. En las funciones encolar() y desencolar(), se actualiza el valor de contador en consecuencia. Además, en la función mostrar(), se imprime el valor de contador.

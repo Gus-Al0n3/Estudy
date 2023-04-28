@@ -1,0 +1,8 @@
+Este código incluye las siguientes funciones:
+
+    insertar(int dato, int prioridad): Inserta un nuevo nodo con el dato y la prioridad especificados en la lista, en orden descendente de prioridad. Si la lista está vacía o si la prioridad del nuevo nodo es mayor que la de la cabeza de la lista, el nuevo nodo se convierte en la nueva cabeza de la lista. Si no, se busca el lugar adecuado para insertar el nuevo nodo en la lista.
+    eliminar(int dato): Elimina el nodo con el dato especificado de la lista. Si la lista está vacía, no hace nada. Si el nodo a eliminar es la cabeza de la lista, la nueva cabeza de la lista será el siguiente nodo. Si no, se busca el nodo anterior al nodo a eliminar y se actualiza su apuntador siguiente para saltar el nodo a eliminar.
+    buscar(int dato): Busca el nodo con el dato especificado en la lista. Si lo encuentra, devuelve un apuntador al nodo. Si no, devuelve NULL.
+    comparar(Nodo* nodo1, Nodo* nodo2): Compara dos nodos en función de sus prioridades. Devuelve un número negativo si el nodo1 tiene una prioridad menor que el nodo2, un número positivo si el nodo1 tiene una prioridad mayor que el nodo2 y cero si tienen la misma prioridad.
+    copiar(Nodo* nodo): Crea una copia del nodo especificado y devuelve un apuntador al nuevo nodo.
+    imprimir(): Imprime los datos de la lista con prioridad.

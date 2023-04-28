@@ -1,0 +1,7 @@
+Este código implementa una cola simplemente ligada en C. La cola se implementa utilizando una lista enlazada simple, donde cada elemento de la cola se almacena en un nodo. La cola tiene un puntero "front" que apunta al primer elemento de la cola y un puntero "rear" que apunta al último elemento de la cola.
+
+La función createQueue() se utiliza para crear una cola vacía y devuelve un puntero a la estructura de la cola. La función newNode() se utiliza para crear un nuevo nodo y devuelve un puntero al nodo.
+
+La función enqueue() se utiliza para agregar un elemento a la cola. La función primero crea un nuevo nodo utilizando la función newNode(), y luego agrega este nodo al final de la cola utilizando el puntero "rear". Si la cola está vacía, la función también actualiza el puntero "front" para apuntar al nuevo nodo.
+
+La función dequeue() se utiliza para eliminar un elemento de la cola y devuelve su valor. La función primero verifica si la cola está vacía utilizando la función isEmpty(). Si la cola no está vacía, la función elimina el primer elemento de la

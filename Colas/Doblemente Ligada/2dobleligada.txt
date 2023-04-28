@@ -1,0 +1,17 @@
+Este código implementa una cola doblemente ligada en C. La cola se implementa utilizando una lista enlazada doble, donde cada elemento de la cola se almacena en un nodo. Cada nodo tiene dos punteros: "next" y "prev", que apuntan al siguiente y al nodo anterior, respectivamente.
+
+    Primero, se define la estructura de un nodo utilizando la estructura struct node, que contiene tres campos: data, que almacena el valor del nodo; next, que es un puntero al siguiente nodo en la cola; y prev, que es un puntero al nodo anterior en la cola.
+
+    Luego, se define la estructura de la cola utilizando la estructura struct queue, que contiene dos campos: front, que es un puntero al primer nodo de la cola; y rear, que es un puntero al último nodo de la cola.
+
+    La función newNode() se utiliza para crear un nuevo nodo y devuelve un puntero al nodo. La función asigna memoria dinámicamente para el nodo utilizando la función malloc(), establece el campo data del nodo en el valor proporcionado y establece los punteros next y prev en NULL.
+
+    La función createQueue() se utiliza para crear una cola vacía y devuelve un puntero a la estructura de la cola. La función asigna memoria dinámicamente para la cola utilizando la función malloc(), establece los punteros front y rear en NULL y devuelve un puntero a la cola.
+
+    La función isEmpty() se utiliza para verificar si la cola está vacía. La función devuelve 1 si la cola está vacía, 0 en caso contrario.
+
+    La función enqueue() se utiliza para agregar un elemento a la cola. La función crea un nuevo nodo utilizando la función newNode(), y luego agrega este nodo al final de la cola utilizando el puntero rear. Si la cola está vacía, la función también actualiza el puntero front para apuntar al nuevo nodo. Además, se establece el puntero prev del nuevo nodo para apuntar al nodo anterior en la cola.
+
+    La función dequeue() se utiliza para eliminar un elemento de la cola y devuelve su valor. La función primero verifica si la cola está vacía utilizando la función isEmpty(). Si la cola está vacía, la función devuelve -1. Si la cola no está vacía, la función elimina el primer elemento de la cola utilizando el puntero front y devuelve su valor. Si después de eliminar el primer elemento, la cola queda vacía, la función actualiza el puntero rear a NULL. Si la cola no queda vacía después de eliminar el primer elemento, la función actualiza el puntero prev del nuevo primer elemento en la cola a NULL.
+
+    En la función main(), primero se crea una cola vacía utilizando la función createQueue(). Luego se agregan elementos a la cola utilizando la función enqueue(). Finalmente, se eliminan los elementos de la cola utilizando la función dequeue() y se muestran por pantalla.

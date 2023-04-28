@@ -1,0 +1,3 @@
+Para visualizar el proceso de encolado, desencolado y mostrar la cola, se utilizan las funciones mostrar(), encolar() y desencolar(). La función mostrar() se encarga de mostrar los elementos actuales de la cola en la pantalla, mientras que encolar() y desencolar() añaden o quitan elementos de la cola.
+
+En el main(), se encolan los elementos 1, 2 y 3 a la cola, se desencola el primer elemento y se encolan los elementos 4, 5 y 6 (donde 6 debería producir un error de cola llena). Luego, se desencolan todos los elementos de la cola. Cada vez que se llama a una de estas funciones, se muestra
